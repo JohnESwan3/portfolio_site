@@ -80,6 +80,8 @@ a {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
         background: rgba(13, 110, 139, 0.75); }
+    #main-footer .footer-content a {
+      color: #fff; }
 
 .menu-wrap {
   position: fixed;
