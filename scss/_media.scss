@@ -23,3 +23,31 @@
     }
   }
 }
+
+// Thin Smartphones: Galaxy Fold
+@media (max-width: 300px) {
+  #showcase {
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  #showcase {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}
