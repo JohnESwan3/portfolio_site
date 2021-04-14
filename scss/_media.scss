@@ -14,12 +14,16 @@
   }
 
   #main-footer {
-    height: 12rem;
+    height: 7.5rem;
 
     .footer-content {
       flex-direction: column;
       padding: 1rem;
-      height: 5rem;
+      height: 6rem;
+    }
+
+    .social {
+      padding-top: 1rem;
     }
   }
 }
