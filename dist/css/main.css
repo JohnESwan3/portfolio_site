@@ -56,12 +56,54 @@
 .my-4 {
   margin: 1rem 0; }
 
+#contact {
+  background: rgba(24, 39, 51, 0.85);
+  padding: 25px;
+  margin: 50px 0;
+  border-radius: 10px; }
+  #contact input[type='text'],
+  #contact input[type='email'],
+  #contact input[type='tel'],
+  #contact textarea {
+    width: 100%;
+    border: 3px solid rgba(13, 110, 139, 0.75);
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out; }
+  #contact input[type='text']:hover,
+  #contact input[type='email']:hover,
+  #contact input[type='tel']:hover,
+  #contact textarea:hover {
+    border-color: rgba(229, 148, 0, 0.9); }
+  #contact .btn {
+    display: inline-block;
+    border: none;
+    background: rgba(13, 110, 139, 0.75);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 2rem;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+    border-radius: 10px; }
+    #contact .btn:hover {
+      opacity: 0.7; }
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4; }
 
 ul,
@@ -85,7 +127,7 @@ li .current {
   height: 100vh;
   position: relative; }
   #showcase:before {
-    content: "";
+    content: '';
     background: url("/dist/images/mainbg.jpg") no-repeat center center/cover;
     position: absolute;
     top: 0;
@@ -110,7 +152,7 @@ li .current {
     height: 10rem;
     border-bottom: 3px solid rgba(229, 148, 0, 0.9); }
     #showcase-inner:before {
-      content: "";
+      content: '';
       background: url("/dist/images/mainbg.jpg") no-repeat 20% 15%/cover;
       position: absolute;
       width: 100%;
@@ -200,7 +242,7 @@ li .current {
       justify-content: center;
       transition: all 0.4s ease; }
       .menu-wrap .hamburger > div:before, .menu-wrap .hamburger > div:after {
-        content: "";
+        content: '';
         position: absolute;
         z-index: 1;
         top: -10px;

@@ -1,145 +1,144 @@
 @import 'variables';
 
 .menu-wrap {
-    position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  & .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+  & .hamburger {
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: $primary-tColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    & .toggler {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        opacity: 0;
-    }
+    // Hamburger Line
+    & > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
 
-    & .hamburger {
+      // Hamburger Line Top/Bottom
+      &:before,
+      &:after {
+        content: '';
         position: absolute;
-        top: 0;
-        left: 0;
         z-index: 1;
-        width: 60px;
-        height: 60px;
-        padding: 1rem;
-        background: $primary-tColor;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        // Hamburger Line
-        & > div {
-            position: relative;
-            flex: none;
-            width: 100%;
-            height: 2px;
-            background: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.4s ease;
-
-            // Hamburger Line Top/Bottom
-            &:before,
-            &:after {
-                content: "";
-                position: absolute;
-                z-index: 1;
-                top: -10px;
-                width: 100%;
-                height: 2px;
-                background: inherit;
-            }
-            // Move Line Down
-            &:after {
-                top: 10px;
-            }
-        }
-    }
-
-    // Toggler Animation
-    & .toggler:checked + .hamburger > div {
-        transform: rotate(135deg);
-
-        // Turns Lines Into X
-        &:before,
-        &:after {
-            top: 0;
-            transform: rotate(90deg);
-        }
-    }
-
-    // Rotate On Hover When Checked
-    & .toggler:checked:hover + .hamburger > div {
-        transform: rotate(225deg);
-    }
-
-    // Show Menu
-    & .toggler:checked ~ .menu {
-        visibility: visible;
-
-        & > div {
-            transform: scale(1);
-            transition-duration: $menu-speed;
-
-            & > div {
-                opacity: 1;
-                transition: opacity 0.4s ease 0.4s;
-            }
-        }
-    }
-
-    & .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
+        top: -10px;
         width: 100%;
-        height: 100%;
-        visibility: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        & > div {
-            background: $overlay-color;
-            border-radius: 50%;
-            width: 250vw;
-            height: 250vw; // Maybe Change to VH?
-            display: flex;
-            flex: none;
-            align-items: center;
-            justify-content: center;
-            transform: scale(0);
-            transition: all 0.75s ease;  //Change Speed?
-
-            & > div {
-                text-align: center;
-                max-width: 90vw;
-                max-height: 100vh;
-                opacity: 0;
-                transition: opacity 0.4s ease;
-
-                & > ul > li {
-                    list-style: none;
-                    color: #fff;
-                    font-size: 1.5rem;
-                    padding: 1rem;
-
-                    & > a {
-                        color: inherit;
-                        text-decoration: none;
-                        transition: color 0.4s ease;
-
-                        &:hover {
-                            color: $secondary-tColor;
-                        }
-                    }
-                }
-            }
-        }
+        height: 2px;
+        background: inherit;
+      }
+      // Move Line Down
+      &:after {
+        top: 10px;
+      }
     }
-}
+  }
 
+  // Toggler Animation
+  & .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+
+    // Turns Lines Into X
+    &:before,
+    &:after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+  }
+
+  // Rotate On Hover When Checked
+  & .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  // Show Menu
+  & .toggler:checked ~ .menu {
+    visibility: visible;
+
+    & > div {
+      transform: scale(1);
+      transition-duration: $menu-speed;
+
+      & > div {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s;
+      }
+    }
+  }
+
+  & .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > div {
+      background: $overlay-color;
+      border-radius: 50%;
+      width: 250vw;
+      height: 250vw; // Maybe Change to VH?
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.75s ease; //Change Speed?
+
+      & > div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+
+        & > ul > li {
+          list-style: none;
+          color: #fff;
+          font-size: 1.5rem;
+          padding: 1rem;
+
+          & > a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.4s ease;
+
+            &:hover {
+              color: $secondary-tColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

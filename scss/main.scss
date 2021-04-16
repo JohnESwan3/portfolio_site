@@ -1,5 +1,6 @@
-@import "variables";
-@import "utilities";
+@import 'variables';
+@import 'utilities';
+@import 'contact';
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  // font-family:
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
@@ -39,7 +40,7 @@ li {
   position: relative;
 
   &:before {
-    content: "";
+    content: '';
     background: $main-bg no-repeat center center/cover;
     position: absolute;
     top: 0;
@@ -69,7 +70,7 @@ li {
     border-bottom: 3px solid $secondary-tColor;
 
     &:before {
-      content: "";
+      content: '';
       background: $main-bg no-repeat 20% 15% / cover;
       position: absolute;
       width: 100%;
@@ -146,5 +147,5 @@ li {
   }
 }
 
-@import "menu";
-@import "media";
+@import 'menu';
+@import 'media';
