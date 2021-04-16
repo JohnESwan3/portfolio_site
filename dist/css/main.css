@@ -190,8 +190,7 @@ li .current {
   background: rgba(24, 39, 51, 0.85);
   color: #fff;
   height: 5rem;
-  border-top: 3px solid rgba(229, 148, 0, 0.9);
-  flex-shrink: 0; }
+  border-top: 3px solid rgba(229, 148, 0, 0.9); }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
