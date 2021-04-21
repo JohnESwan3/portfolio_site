@@ -49,7 +49,11 @@
 
 @media (max-width: 480px) {
   .card-container {
-    width: 80vw;
+    width: 90vw;
+  }
+
+  .panel {
+    height: 70vh;
   }
 
   .panel:nth-of-type(4),
