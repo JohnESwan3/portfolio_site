@@ -326,8 +326,8 @@ li .current {
     .panel.active {
       flex: 4; }
   .card-container {
-    width: 90vw;
-    height: 90vh; } }
+    width: 95vw;
+    height: 95vh; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {
