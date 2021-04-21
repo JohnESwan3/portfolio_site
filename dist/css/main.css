@@ -325,14 +325,14 @@ li .current {
     padding: none;
     box-shadow: 2px 2px 5px 3px #000; }
     .panel.active {
-      flex: 4; }
+      flex: 5; }
   .card-container {
     width: 95vw;
     height: 95vh; } }
 
 @media (max-height: 400px) {
   .panel {
-    height: 67vh; } }
+    height: 55vh; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {

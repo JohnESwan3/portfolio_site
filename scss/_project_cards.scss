@@ -60,7 +60,7 @@
     box-shadow: 2px 2px 5px 3px #000;
 
     &.active {
-      flex: 4;
+      flex: 5;
     }
   }
   .card-container {
@@ -71,6 +71,6 @@
 
 @media (max-height: 400px) {
   .panel {
-    height: 67vh;
+    height: 55vh;
   }
 }
