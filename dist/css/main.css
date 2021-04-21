@@ -277,8 +277,9 @@ li .current {
 
 .card-container {
   display: flex;
-  width: 90vw;
-  height: 100vh; }
+  width: 80vw;
+  height: 100vh;
+  overflow: hidden; }
 
 .project-cards {
   margin: 0;
