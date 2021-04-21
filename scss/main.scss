@@ -6,11 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  background-color: #444;
+  color: #f4f4f4;
 }
 
 ul,
@@ -148,4 +153,5 @@ li {
 }
 
 @import 'menu';
+@import 'project_cards';
 @import 'media';

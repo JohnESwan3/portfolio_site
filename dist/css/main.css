@@ -107,10 +107,14 @@ fieldset {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+  *::-webkit-scrollbar {
+    display: none; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4; }
+  line-height: 1.4;
+  background-color: #444;
+  color: #f4f4f4; }
 
 ul,
 li,
@@ -310,6 +314,54 @@ li .current {
             transition: color 0.4s ease; }
             .menu-wrap .menu > div > div > ul > li > a:hover {
               color: rgba(229, 148, 0, 0.9); }
+
+.card-container {
+  display: flex;
+  width: 90vw;
+  height: 100vh; }
+
+.project-cards {
+  margin: 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.panel {
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  box-shadow: 3px 3px 10px 6px #000; }
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background: none; }
+  .panel.active {
+    flex: 5; }
+    .panel.active h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.4s; }
+
+@media (max-width: 480px) {
+  .card-container {
+    width: 80vw; }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5),
+  .panel:nth-of-type(67) {
+    display: none; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {
