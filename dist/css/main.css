@@ -330,6 +330,10 @@ li .current {
     width: 95vw;
     height: 95vh; } }
 
+@media (max-height: 400px) {
+  .panel {
+    height: 60vh; } }
+
 @media (max-width: 500px) {
   .menu-wrap .menu > div {
     border-radius: 50%;

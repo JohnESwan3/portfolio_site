@@ -68,3 +68,9 @@
     height: 95vh;
   }
 }
+
+@media (max-height: 400px) {
+  .panel {
+    height: 60vh;
+  }
+}
