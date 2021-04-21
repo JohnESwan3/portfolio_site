@@ -130,7 +130,7 @@ li .current {
   #showcase span {
     text-transform: uppercase;
     font-size: 1.4rem;
-    color: rgba(229, 148, 0, 0.9); }
+    color: #e59400; }
   #showcase .btn {
     display: inline-block;
     border: none;
@@ -318,11 +318,16 @@ li .current {
 
 @media (max-width: 480px) {
   .card-container {
+    display: flex;
+    flex-direction: column; }
+  .panel {
+    margin: none;
+    padding: none; }
+    .panel.active {
+      flex: 4; }
+  .card-container {
     width: 90vw;
-    height: 90vh; }
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none; } }
+    height: 90vh; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {

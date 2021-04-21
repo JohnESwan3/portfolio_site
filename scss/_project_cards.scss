@@ -49,21 +49,21 @@
 }
 
 @media (max-width: 480px) {
-  //   .panel {
-  //     margin: none;
-  //     padding: none;
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-  //     &.active {
-  //       flex: 4;
-  //     }
-  //   }
+  .panel {
+    margin: none;
+    padding: none;
+
+    &.active {
+      flex: 4;
+    }
+  }
   .card-container {
     width: 90vw;
     height: 90vh;
-  }
-
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
   }
 }
