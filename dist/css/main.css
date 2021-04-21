@@ -147,8 +147,8 @@ li .current {
   display: flex; }
 
 .page-container {
-  height: 100vh;
-  width: 100vw; }
+  height: 90vh;
+  width: 80vw; }
 
 #main-footer {
   background: rgba(24, 39, 51, 0.85);
