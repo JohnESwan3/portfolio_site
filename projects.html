@@ -36,8 +36,37 @@
         <div class="bottom-line"></div>
         </div>
     </header>
+    
+    <!-- Section A: Music Player -->
+    <div class="player-body">
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="title">Ambient Gold</h4>
+            <h6 id="artist">Harris Heller</h6>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
 
+        <audio src="music/Ambient Gold.mp3" id="audio">
+        </audio>
+        <div class="img-container">
+            <img src="images/Ambient Gold.jpg" alt="cover" id="cover">
+        </div>
 
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>  
+    </div>  
     <!-- Section B: Cards -->
     <div class="page-container">
     <section class="project-cards py-3">
@@ -75,5 +104,6 @@
     </footer>
 
     <script src="/dist/JS/cards.js"></script>
+    <script src="/dist/JS/music.js"></script>
 </body>
 </html>
