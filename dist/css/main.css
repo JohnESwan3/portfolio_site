@@ -322,7 +322,8 @@ li .current {
     flex-direction: column; }
   .panel {
     margin: none;
-    padding: none; }
+    padding: none;
+    box-shadow: 2px 2px 5px 3px #000; }
     .panel.active {
       flex: 4; }
   .card-container {
