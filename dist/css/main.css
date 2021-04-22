@@ -278,7 +278,7 @@ li .current {
 
 .player-body {
   display: flex;
-  height: 30vh;
+  height: 15vh;
   margin-top: 50px;
   margin-bottom: -30px;
   font-family: 'Lato', sans-serif;
@@ -377,35 +377,43 @@ li .current {
   width: 0%;
   transition: width 0.1s linear; }
 
-@media (max-height: 480px) {
+.music-container {
+  padding: 5px 10px;
+  margin: 10px 0; }
+
+.img-container {
+  position: relative;
+  width: 60px; }
+  .img-container img {
+    width: 75px;
+    height: 75px; }
+
+.music-info {
+  background-color: rgba(24, 39, 51, 0.85);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 5px 5px 5px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.25s ease-in; }
+  .music-info h4,
+  .music-info h6 {
+    margin: 0; }
+  .music-info h6 {
+    padding-top: 5px;
+    opacity: 0.5; }
+
+@media (max-widtht: 480px) {
   .player-body {
-    height: 50vh; }
-  .music-container {
-    padding: 5px 10px;
-    margin: 10px 0; }
-  .img-container {
-    position: relative;
-    width: 60px; }
-    .img-container img {
-      width: 75px;
-      height: 75px; }
-  .music-info {
-    background-color: rgba(24, 39, 51, 0.85);
-    border-radius: 15px 15px 0 0;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: calc(100% - 40px);
-    padding: 5px 5px 5px 150px;
-    opacity: 0;
-    transform: translateY(0%);
-    transition: transform 0.3s ease-in, opacity 0.25s ease-in; }
-    .music-info h4,
-    .music-info h6 {
-      margin: 0; }
-    .music-info h6 {
-      padding-top: 5px;
-      opacity: 0.5; } }
+    height: 50vh;
+    width: 50vw; } }
+
+@media (max-height: 400px) {
+  .player-body {
+    height: 35vh; } }
 
 .card-container {
   display: flex;
@@ -464,7 +472,8 @@ li .current {
 
 @media (max-height: 400px) {
   .panel {
-    height: 55vh; } }
+    height: 60vh;
+    width: 50vw; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {
