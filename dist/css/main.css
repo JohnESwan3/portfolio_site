@@ -472,7 +472,8 @@ li .current {
 
 @media (max-height: 400px) {
   .panel {
-    height: 55vh; } }
+    height: 55vh;
+    box-shadow: 2px 2px 5px 3px #000; } }
 
 @media (max-width: 500px) {
   .menu-wrap .menu > div {
