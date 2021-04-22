@@ -12,9 +12,9 @@
 }
 
 .music-container {
-  background-color: #000;
+  background-color: #222;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px 3px rgba(24, 39, 51, 0.5);
+  box-shadow: 2px 2px 5px 2px#000;
   display: flex;
   padding: 20px 30px;
   position: relative;
@@ -60,7 +60,7 @@
 }
 
 .action-btn {
-  background-color: #000;
+  background-color: #222;
   border: 0;
   color: #0a6e8054;
   font-size: 20px;
@@ -70,6 +70,11 @@
 
   &:focus {
     outline: 0;
+  }
+
+  &:hover {
+    color: $secondary-color;
+    transition: color 0.2s ease-in;
   }
 }
 
@@ -110,8 +115,8 @@
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px 0;
-  height: 4px;
+  margin: 10px -20px;
+  height: 5px;
   width: 100%;
 }
 
@@ -135,6 +140,11 @@
   & img {
     width: 75px;
     height: 75px;
+
+    &:hover {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 

@@ -287,9 +287,9 @@ li .current {
   justify-content: center; }
 
 .music-container {
-  background-color: #000;
+  background-color: #222;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px 3px rgba(24, 39, 51, 0.5);
+  box-shadow: 2px 2px 5px 2px #000;
   display: flex;
   padding: 20px 30px;
   position: relative;
@@ -326,7 +326,7 @@ li .current {
   z-index: 1; }
 
 .action-btn {
-  background-color: #000;
+  background-color: #222;
   border: 0;
   color: #0a6e8054;
   font-size: 20px;
@@ -335,6 +335,9 @@ li .current {
   margin: 0 20px; }
   .action-btn:focus {
     outline: 0; }
+  .action-btn:hover {
+    color: #e59400;
+    transition: color 0.2s ease-in; }
 
 .action-btn-big {
   color: #13505cc5;
@@ -366,8 +369,8 @@ li .current {
   background: #fff;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px 0;
-  height: 4px;
+  margin: 10px -20px;
+  height: 5px;
   width: 100%; }
 
 .progress {
@@ -387,6 +390,9 @@ li .current {
   .img-container img {
     width: 75px;
     height: 75px; }
+    .img-container img:hover {
+      width: 80px;
+      height: 80px; }
 
 .music-info {
   background-color: rgba(24, 39, 51, 0.85);
