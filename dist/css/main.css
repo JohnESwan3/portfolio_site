@@ -483,11 +483,6 @@ li .current {
     padding-top: 5px;
     opacity: 0.5; }
 
-@media (max-width: 480px) {
-  .player-body {
-    height: 50vh;
-    width: 50vw; } }
-
 @media (max-height: 400px) {
   .player-body {
     height: 35vh; } }
